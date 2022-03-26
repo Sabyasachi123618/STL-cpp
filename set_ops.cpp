@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-void display(set<int> s)
+void display(set<int> s) //printing using iterator
 {
 	set<int>::iterator i;
 	for(i=s.begin();i!=s.end();i++)
@@ -16,7 +16,7 @@ int main()
 	{
 		int x;
 		cin>>x;
-		s.insert(x);
+		s.insert(x); //insert operation
 	}
 	display(s);
 	s.insert(s.begin(),10);
