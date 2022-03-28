@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        vector<int>::iterator it;
+        int sum=0,max=nums[0];
+        for(it=nums.begin();it!=nums.end();it++)
+        {
+            sum=sum+*it;
+            if(sum>max)
+                max=sum;
+            if(sum<0)
+                sum=0;
+        }
+        return max;
+    }
+};
